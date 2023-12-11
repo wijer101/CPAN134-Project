@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macronutrients Information</title>
+    <link rel="stylesheet" href="../css/macro_style.css">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- Waypoints JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Macronutrients Information</h1>
+        <button id="toggle-menu">Open Navigation Bar</button>
+        <div id="navigation-menu">
+            <a href="../index.html">Home</a> <a
+            href="../webpages/macronutrients.html">Macronutrients</a> <a
+            href="../webpages/micronutrients.html">Micronutrients</a> <a href="../webpages/registration.html">Registration</a>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <main>
+            <section class="animated-section">
+                <h2>Carbohydrates</h2>
+                <div class="slider">
+                    <img src="../images/Carbohydrates1.jpg" alt="Carbohydrates Image 1">
+                </div>
+                <p>Carbohydrates are the energetic champions that fuel our bodies with vitality. These compounds, composed of carbon, hydrogen, and oxygen, come in various forms such as sugars, starches, and fibers. Think of them as the high-octane fuel your body needs for optimal performance. From powering your brain to sustaining muscle function, carbohydrates are the unsung heroes of your daily adventures.</p>
+                <p>Embrace a diverse range of carbohydrate sources, from the sweetness of fruits to the heartiness of whole grains. Strike a balance in your diet, and let the symphony of carbohydrates harmonize with your body's energy needs.</p>
+            </section>
+    
+            <section class="animated-section">
+                <h2>Fats</h2>
+                <div class="slider">
+                    <img src="../images/fats1.jpg" alt="Lipids Image 1">
+                </div>
+                <p>Lipids, the majestic rulers of satiety, grace our bodies with their presence. Beyond being the storage units of energy, fats act as guardians of essential nutrients and provide a cushion for our organs. From the luxurious avocados to the humble olive oil, fats come in a myriad of forms, each with its unique flavor and nutritional profile.</p>
+                <p>Explore the world of healthy fats, savoring the richness they bring to your plate. Let them be the architects of a well-rounded and flavorful diet, building a foundation of wellness and satisfaction.</p>
+            </section>
+    
+            <section class="animated-section">
+                <h2>Proteins</h2>
+                <div class="slider">
+                    <img src="../images/protein.jpg" alt="Proteins Image 1">
+                </div>
+                <p>Proteins, the construction crew of life, diligently build and repair the intricate structures within our bodies. Comprising amino acids, these building blocks are essential for muscle development, immune function, and countless biological processes. From the elegance of salmon to the robustness of beans, proteins manifest in a delicious array of choices.</p>
+                <p>Embrace the protein symphony, orchestrating a culinary masterpiece that supports your body's daily performance. Celebrate the diversity of protein sources, and let your plate be a canvas painted with the colors of health and strength.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2023 Micronutrients Webpage | Designed by Arman Randhawa & Cameron Imagbe
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Slick Carousel JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Waypoints Initialization -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var waypoints = document.querySelectorAll('.animated-section');
+            waypoints.forEach(function (waypoint) {
+                var animatedSection = new Waypoint({
+                    element: waypoint,
+                    handler: function (direction) {
+                        waypoint.classList.add('animated');
+                    },
+                    offset: '50%'
+                });
+            });
+        });
+    </script>
+
+    <!-- Additional jQuery function for toggling navigation menu -->
+    <script>
+        $(document).ready(function () {
+            $('#toggle-menu').click(function () {
+                $('#navigation-menu').toggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
