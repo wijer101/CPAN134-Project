@@ -1,13 +1,24 @@
-header
-{
+body {
+  background-color: #808080;
+  margin: 0; 
+  padding: 0; 
+}
+
+header {
   text-align: center;
-  background-color: rgb(92,132,140);
+  background-color: rgb(92, 132, 140);
   color: #eee;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
   font-weight: 500;
   line-height: 400%;
-  text-align: center;
+  margin: 0;
+}
+
+#wrapper {
+  margin: auto;
+  width: 80%;
+  background-color: rgb(100, 140, 140);
 }
 
 #wrapper{
@@ -93,13 +104,13 @@ h3{
 footer {
   background-color: rgb(92,132,140);
   padding: 60px;
+  text-align: center;
 }
 
-/* Add subtle animations to your existing CSS */
 .nutrition-section img {
-  transition: transform 0.3s ease-in-out; /* Add a smooth transition on image hover */
+  transition: transform 0.3s ease-in-out;
 }
 
 .nutrition-section img:hover {
-  transform: scale(1.1); /* Zoom in slightly on image hover */
+  transform: scale(1.1); 
 }
