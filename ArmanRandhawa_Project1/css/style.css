@@ -1,7 +1,7 @@
 body {
   background-color: lightslategray;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -21,19 +21,19 @@ header {
   background-color: rgb(100, 140, 140);
 }
 
-#wrapper{
+#wrapper {
   margin: auto;
   width: 80%;
-  background-color: rgb(100,140,140);
+  background-color: rgb(100, 140, 140);
 }
 
-nav{
+nav {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: rgb(148,180,180);
+  background-color: rgb(148, 180, 180);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,44 +44,44 @@ h2 {
   margin-bottom: 30px;
 }
 
-#MacrosandMicros{
+#MacrosandMicros {
   float: right;
 }
 
-p{
+p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#carbohydrates{
+#carbohydrates {
   max-width: 350px;
   height: auto;
 }
 
-#lipids{
+#lipids {
   max-width: 350px;
   height: auto;
 }
 
-#proteins{
+#proteins {
   max-width: 350px;
   height: auto;
 }
 
-#minerals{
+#minerals {
   max-width: 350px;
   height: auto;
 }
 
-#vitamins{
+#vitamins {
   max-width: 350px;
   height: auto;
 }
 
-section{
+section {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-li{
+li {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -89,7 +89,7 @@ li{
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  background-color: rgb(148,180,180);
+  background-color: rgb(148, 180, 180);
 }
 
 .nutrition-section img {
@@ -97,14 +97,17 @@ li{
   margin-right: 20px;
 }
 
-h3{
+h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
-  background-color: rgb(92,132,140);
-  padding: 60px;
+  background-color: #333;
+  color: white;
   text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -113,5 +116,5 @@ footer {
 }
 
 .nutrition-section img:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
