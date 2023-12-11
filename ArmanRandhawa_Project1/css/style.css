@@ -94,3 +94,12 @@ footer {
   background-color: rgb(92,132,140);
   padding: 60px;
 }
+
+/* Add subtle animations to your existing CSS */
+.nutrition-section img {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition on image hover */
+}
+
+.nutrition-section img:hover {
+  transform: scale(1.1); /* Zoom in slightly on image hover */
+}
