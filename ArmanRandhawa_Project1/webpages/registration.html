@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macronutrient Calculator Registration</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgb(148, 180, 180);
+      color: #333;
+    }
+
+    header {
+      background-color: rgb(92, 132, 140);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    section {
+      flex: 1;
+      max-width: 400px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: justify;
+      background-color: wheat;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      color: rgb(92, 132, 140);
+      border-bottom: 2px solid rgb(92, 132, 140);
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    form {
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <script>
+    function showOptions() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var age = document.getElementById("age").value;
+      var gender = document.getElementById("gender").value;
+      var weight = document.getElementById("weight").value;
+      var goal = document.getElementById("goal").value;
+
+      alert("Registration Successful!\n\n" +
+        "First Name: " + firstName + "\n" +
+        "Last Name: " + lastName + "\n" +
+        "Age: " + age + "\n" +
+        "Gender: " + gender + "\n" +
+        "Weight: " + weight + " kg\n" +
+        "Goal: " + goal);
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Macronutrient Calculator Registration</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" id="registrationForm" onsubmit="event.preventDefault(); showOptions();">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="goal">Select Your Goal:</label>
+        <select id="goal" name="goal" required>
+          <option value="weight_loss">Weight Loss</option>
+          <option value="muscle_gain">Muscle Gain</option>
+          <option value="maintenance">Maintenance</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2023 Micronutrients Webpage | Designed by Arman Randhawa & Cameron Imagbe
+  </footer>
+
+</body>
+</html>
