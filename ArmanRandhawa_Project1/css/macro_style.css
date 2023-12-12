@@ -104,3 +104,21 @@ button {
     text-decoration: none;
     margin-bottom: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    #toggle-menu {
+        display: block;
+    }
+
+    #navigation-menu {
+        display: none;
+    }
+
+    main section {
+        margin-bottom: 20px;
+    }
+}

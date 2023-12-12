@@ -118,3 +118,31 @@ footer {
 .nutrition-section img:hover {
   transform: scale(1.1);
 }
+
+body {
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    
+  }
+
+  
+  #wrapper {
+    padding: 10px;
+  }
+
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
